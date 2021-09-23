@@ -1,0 +1,18 @@
+- 环境配置
+  - pytorch
+  - python-opencv
+  - numpy
+  - matplotlib
+- 项目配置
+  - 在根目录下创建testing_dataset文件
+  - 在根目录的models文件中，放入预训练后的ResNet50和Alex Net
+    - 下载路径
+      - [ResNet50](https://pan.baidu.com/s/1UP3jm4Io1_sdxPoGIVdSkg) 提取码：o6gz
+      - [Alex Net](https://pan.baidu.com/s/1SB9_XOU6wWK7xmY92FtHog) 提取码：b7mo
+  - 在根目录导入该模型信息
+      - [model](https://pan.baidu.com/s/1MNT3CoUNbR2aaCv8HiYmMw)  提取码：ybpt
+- 运行
+  - main.py
+    - 内含测试函数和评估函数，同时也编写了success和precision的数据可视化函数
+    - test函数主要是根据输入的每一帧图像预测其图像位置，并根据预测位置对每一帧的数据图像进行输出和标注。可以根据自己的需要选择性输出
+    - eval函数主要是对预测的矩形框位置和真实的矩形框位置进行比较，并根据重合情况计算相关的评估变量
